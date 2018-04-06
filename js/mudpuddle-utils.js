@@ -53,8 +53,6 @@ $(document).ready(function () {
     $('#zoomReset').click(function() { resetMap(); });
 
     $('#printButton').click(printMap);
-    //$('#printButton').click(function() { window.open('http://www.google.com'); });
-    //document.getElementById('printButton').onclick=printMap;
 
     $('#location').bind('keyup', function(e) {
       if ( e.keyCode === 13 ) {
@@ -62,5 +60,6 @@ $(document).ready(function () {
       }
     });
 
+    panelToggle();
   // $('#location').append(geocoder.onAdd(map));
 });
