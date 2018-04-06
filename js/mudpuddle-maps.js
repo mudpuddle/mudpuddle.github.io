@@ -12,7 +12,7 @@ function initialize() {
   mapboxgl.accessToken = 'pk.eyJ1IjoibXVkcHVkZGxlIiwiYSI6IjJjeEdfRDgifQ.FuEb3wc45Kl4LfEe3Qe_uQ';
   map = new mapboxgl.Map({
     container: 'map-canvas', // container id
-    style: 'mapbox://styles/mapbox/outdoors-v9', // stylesheet location
+    style: 'mapbox://styles/mapbox/outdoors-v10', // stylesheet location
     center: myLatLng, // starting position [lng, lat]
     zoom: zoom // starting zoom
   });
@@ -105,7 +105,6 @@ function resetMap() {
 }
 
 function printMap() {
-    // return newWindow = window.open("https://www.google.com", "_blank", "toolbar=yes,top=500,left=500,width=400,height=400");
     var currentLoc = map.getCenter();
     var currentZoom = map.getZoom();
     return newWindow = window.open(
